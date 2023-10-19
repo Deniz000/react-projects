@@ -1,0 +1,29 @@
+# Node.js ve npm
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Derleme sonuçları
+/build
+/dist
+
+# Yerel çıktı dosyaları
+*.log
+*.sqlite
+*.log.*
+*.db
+
+# Ortam değişkenleri
+.env.local
+.env.development
+.env.test
+.env.production
+.env.local
+.env.*
+
+# VS Code özel klasör ve dosyalar
+.vscode/
+.history
+.DS_Store

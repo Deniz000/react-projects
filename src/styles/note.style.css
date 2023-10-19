@@ -1,0 +1,68 @@
+section {
+    background-image: url('../img/do_small.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    gap: 24px;
+    text-align: center;
+}
+
+.note-container{
+    background-color: rgba(125, 255, 212, 0.9);
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+}
+.note-container:hover{
+    background-color: rgb(125, 255, 212);
+}
+.delete-btn{
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.note-card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(172, 158, 225);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 17px;
+    border: 0 solid transparent;
+}
+
+.note-card:hover {
+    background-color: rgba(172, 158, 226);
+    border: 1px solid black;
+}
+
+.add-card{
+
+    width: 180px;
+    height: 180px;
+    background-color: rgba(172, 158, 226, 0.2);
+    border-radius: 10px;
+    padding: 10% 10px 0;
+    margin: 20px 3px;
+    text-align: center;
+    font-size: 130px;
+    color: gray;
+    cursor: pointer;
+}
+.add-card:hover{
+    background-color: rgba(172, 158, 226, 0.5);
+
+}
