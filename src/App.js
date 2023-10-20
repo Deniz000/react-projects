@@ -10,6 +10,7 @@ import SignUpBasic from './components/form_things/SignUpBasic'
 import FormikSignUp from './components/formik/FormikSignUp';
 
 
+
 function App() {
 
   return (
