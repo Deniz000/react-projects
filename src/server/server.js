@@ -8,26 +8,14 @@ createServer({
     
     seeds(server) {
         server.create("project", {
-          name: "Notes App",
-          imgUrl: "cl1.png",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+          name: "notes",
+          imgUrl: "notes.png",
+          description: "Bir bileşen oluşturarak React state yönetimi, useEffect ile tarayıcıda kalıcı veri depolama (localStorage), olay dinleme ve CSS modülleri kullanarak özgün stil oluşturma pratiği yaparak React becerilerini geliştirdim."
         });
         server.create("project", {
-          name: "Notes App",
-          imgUrl: "cl1.png",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-        });
-        server.create("project", {
-          name: "Notes App",
-          imgUrl: "cl1.png",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-
-        });
-        server.create("project", {
-          name: "Notes App",
-          imgUrl: "cl1.png",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-
+          name: "login",
+          imgUrl: "login_signup.jpeg",
+          description: "Bu iki bileşen, kullanıcıların giriş yapabileceği veya kayıt olabileceği temel bir giriş/üyelik sayfası oluşturur. "
         });
       },
       routes() {

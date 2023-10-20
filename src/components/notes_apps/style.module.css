@@ -1,9 +1,6 @@
-.note-app {
-    background-image: url('../../images/do_small.png');
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
+.noteapp {
     min-width: 100vh;
+    min-height: 100vh;
     padding: 50px 50px;
     box-sizing: border-box;
     display: grid;
@@ -12,16 +9,16 @@
     gap: 24px;
     text-align: center;
 }
-.note-container{
+.notecontainer{
     background-color: rgba(125, 255, 212, 0.9);
     border-radius: 10px;
     width: 40px;
     height: 30px;
 }
-.note-container:hover{
+.notecontainer:hover{
     background-color: rgb(125, 255, 212);
 }
-.delete-btn{
+.deletebtn{
     width: 100%;
     margin: 0;
     background-color: transparent;
@@ -30,7 +27,7 @@
     cursor: pointer;
 }
 
-.note-card {
+.notecard {
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -43,23 +40,23 @@
     border: 0 solid transparent;
 }
 
-.note-card:hover {
+.notecard:hover {
     background-color: rgba(172, 158, 226);
     border: 1px solid black;
 }
-.add-card{
+.addcard{
     width: 180px;
     height: 180px;
     background-color: rgba(172, 158, 226, 0.2);
     border-radius: 10px;
     padding: 10% 10px 0;
-    margin: 20px 3px;
+    margin: 33px 3px;
     text-align: center;
     font-size: 130px;
     color: gray;
     cursor: pointer;
 }
-.add-card:hover{
+.addcard:hover{
     background-color: rgba(172, 158, 226, 0.5);
 
 }

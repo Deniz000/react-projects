@@ -12,7 +12,8 @@ function Projects() {
 
   const elements = projects.map((project) => (
     <div key={project.id} className='project-card'>
-      <Link to={`/projects/:${project.id}`} className='project-link'>
+      {/* <Link to={`/projects/:${}`} className='project-link'> */}
+      <Link to={`/${project.name}`} className='project-link'>
       <img src={`/images/${project.imgUrl}`}  className='project-img' alt='apps'/>
       <h2 className='project-name'>{project.name}</h2>
       <p className='project-description'>{project.description}</p>

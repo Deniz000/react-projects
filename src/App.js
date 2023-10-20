@@ -3,8 +3,10 @@ import React from 'react'
 import Projects from './components/Projects';
 import { Routes, Route } from 'react-router-dom'
 import './server/server.js'
-import ProjectsDetails from './components/ProjectsDetails';
 import Header from './components/Header';
+import Notes from './components/notes_apps/Notes';
+import LoginBasic from './components/form_things/LoginBasic'
+import SignUpBasic from './components/form_things/SignUpBasic'
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Projects />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path='/projects/:id' element={<ProjectsDetails />} />
+        <Route path='/notes' element={<Notes />} />
+        <Route path='/login' element={<LoginBasic />} />
+        <Route path='/signup' element={<SignUpBasic />} />
       </Routes>
       </div>
     </div>

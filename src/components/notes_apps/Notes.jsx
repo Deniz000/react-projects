@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.module.css'
+import styles from './style.module.css'
 
 function Notes() {
     const [notes, setNotes] = React.useState(JSON.parse(localStorage.getItem("notes")) || [])
@@ -20,9 +20,6 @@ function Notes() {
     }
 
     function createNote() {
-        if (notes.length > 9) {
-            return alert('Daha fazla not oluşturmak için notlardan birini silin ')
-        }
         const newNote = {
             id: Math.floor(Math.random() * 100000000),
             body: 'Something..'
@@ -38,10 +35,10 @@ function Notes() {
         setNotes(deletedNote)
     }
     const elements = notes.map((note) =>(
-        <div key={note.id} className="note-container">
-        <button className='delete-btn' onClick={()=>deleteNotes(note.id)}>X</button>
+        <div key={note.id} className={styles.notecontainer}>
+        <button className={styles.deletebtn} onClick={()=>deleteNotes(note.id)}>X</button>
         <textarea
-            className='note-card'
+            className={styles.notecard}
             value={note.body}
             name='notes'
             onChange={(event) => handleChange(note.id, event.target.value)}></textarea>
@@ -50,10 +47,10 @@ function Notes() {
     ))
 
     return (
-        <section className='note-app'>
+        <section className={styles.noteapp}>
             {elements}
-            <div className="add-card" onClick={createNote} 
-            style={{display: notes.length > 9 ? 'none' : ''}}>+</div>
+            <div className={styles.addcard} onClick={createNote} 
+            style={{display: notes.length > 11 ? 'none' : ''}}>+</div>
         </section>
     )
 }
