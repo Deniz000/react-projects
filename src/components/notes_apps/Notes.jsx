@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './style.module.css'
+import './styles.css'
 
 function Notes() {
     const [notes, setNotes] = React.useState(JSON.parse(localStorage.getItem("notes")) || [])
@@ -12,7 +12,7 @@ function Notes() {
     function handleChange(id, text) {
         const updatedNote = notes.map((note) =>{
             if(note.id===id){
-                return {...note,body: text}
+                return { ...note, body: text}
             }
             return note;
         })
@@ -35,10 +35,10 @@ function Notes() {
         setNotes(deletedNote)
     }
     const elements = notes.map((note) =>(
-        <div key={note.id} className={styles.notecontainer}>
-        <button className={styles.deletebtn} onClick={()=>deleteNotes(note.id)}>X</button>
+        <div key={note.id} className='note-container'>
+        <button className='delete-btn' onClick={()=>deleteNotes(note.id)}>X</button>
         <textarea
-            className={styles.notecard}
+            className='note-card'
             value={note.body}
             name='notes'
             onChange={(event) => handleChange(note.id, event.target.value)}></textarea>
@@ -47,9 +47,9 @@ function Notes() {
     ))
 
     return (
-        <section className={styles.noteapp}>
+        <section className='note-app'>
             {elements}
-            <div className={styles.addcard} onClick={createNote} 
+            <div className='add-card' onClick={createNote} 
             style={{display: notes.length > 11 ? 'none' : ''}}>+</div>
         </section>
     )
