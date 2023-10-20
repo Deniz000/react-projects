@@ -53,7 +53,7 @@ header a:hover{
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
-
+  font-size: 14px;
 }
 .project-link{
   color: #222222;

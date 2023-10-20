@@ -2,7 +2,6 @@ import { object, string, boolean } from 'yup';
 import * as Yup from 'yup' 
 
 
-const phoneRegExp = "/^(?:0)[0-9]{10}$/"
 
 const validationMessages = {
     firstName: {
@@ -44,7 +43,7 @@ let userSchema = object({
     email: string().email(validationMessages.email.format).required(validationMessages.email.required),
     password: string().required(validationMessages.password.required).min(6, validationMessages.password.min),
     confirmPassword: string().oneOf([Yup.ref('password')],validationMessages.confirmPassword.match).required(validationMessages.confirmPassword.required),
-    phoneNumber: string().matches(phoneRegExp, validationMessages.phoneNumber.isNumber).required(validationMessages.phoneNumber.required),
+    phoneNumber: string(validationMessages.phoneNumber.isNumber).required(validationMessages.phoneNumber.required),
     gender: string().required(validationMessages.gender.selected),
     confirmBox: boolean().required(validationMessages.confirmBox.selected),
 });

@@ -19,8 +19,8 @@ createServer({
         });
         server.create("project", {
           name: "formik_login",
-          imgUrl: "login_signup.jpeg",
-          description: "Bu iki bileşen, kullanıcıların giriş yapabileceği veya kayıt olabileceği temel bir giriş/üyelik sayfası oluşturur. "
+          imgUrl: "formik.png",
+          description: "React, Formik ve Yup kullanarak geliştirdiğim bu bileşen, kullanıcı kayıt formunun oluşturulması, veri doğrulaması ve işlenmesi süreçlerini başarıyla yöneterek hem kullanıcı dostu bir deneyim sunuyor hem de güvenilir verilerin kaydedilmesini sağlıyor."
         });
       },
       routes() {
