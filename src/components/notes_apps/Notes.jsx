@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/note.style.css'
+import './style.module.css'
 
 function Notes() {
     const [notes, setNotes] = React.useState(JSON.parse(localStorage.getItem("notes")) || [])
@@ -50,7 +50,7 @@ function Notes() {
     ))
 
     return (
-        <section>
+        <section className='note-app'>
             {elements}
             <div className="add-card" onClick={createNote} 
             style={{display: notes.length > 9 ? 'none' : ''}}>+</div>

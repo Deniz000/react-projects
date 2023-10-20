@@ -1,11 +1,28 @@
 import React from 'react'
-import Notes from './notes_apps/Notes'
+import { Link } from 'react-router-dom'
 
 function Projects() {
-  return (
-    <div>
-    <Notes/>
+  const [projects, setProjects] = React.useState([])
+
+  React.useEffect(() => {
+    fetch("api/projects")
+      .then((res) => res.json())
+      .then((data) => setProjects(data.projects))
+  }, [])
+
+  const elements = projects.map((project) => (
+    <div key={project.id} className='project-card'>
+      <Link to={`/projects/:${project.id}`} className='project-link'>
+      <img src={`/images/${project.imgUrl}`}  className='project-img' alt='apps'/>
+      <h2 className='project-name'>{project.name}</h2>
+      <p className='project-description'>{project.description}</p>
+      </Link>
     </div>
+  ))
+  return (
+    <section className='context-home'>
+      {elements}
+    </section>
   )
 }
 

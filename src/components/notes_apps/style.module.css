@@ -1,9 +1,9 @@
-section {
-    background-image: url('../img/do_small.png');
+.note-app {
+    background-image: url('../../images/do_small.png');
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-width: 100vh;
     padding: 50px 50px;
     box-sizing: border-box;
     display: grid;
@@ -12,7 +12,6 @@ section {
     gap: 24px;
     text-align: center;
 }
-
 .note-container{
     background-color: rgba(125, 255, 212, 0.9);
     border-radius: 10px;
@@ -48,9 +47,7 @@ section {
     background-color: rgba(172, 158, 226);
     border: 1px solid black;
 }
-
 .add-card{
-
     width: 180px;
     height: 180px;
     background-color: rgba(172, 158, 226, 0.2);
