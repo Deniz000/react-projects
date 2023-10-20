@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Notes from './components/notes_apps/Notes';
 import LoginBasic from './components/form_things/LoginBasic'
 import SignUpBasic from './components/form_things/SignUpBasic'
+import FormikSignUp from './components/formik/FormikSignUp';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/notes' element={<Notes />} />
         <Route path='/login' element={<LoginBasic />} />
         <Route path='/signup' element={<SignUpBasic />} />
+        <Route path='/formik_login' element={<FormikSignUp />} />
       </Routes>
       </div>
     </div>

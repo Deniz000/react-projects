@@ -17,6 +17,11 @@ createServer({
           imgUrl: "login_signup.jpeg",
           description: "Bu iki bileşen, kullanıcıların giriş yapabileceği veya kayıt olabileceği temel bir giriş/üyelik sayfası oluşturur. "
         });
+        server.create("project", {
+          name: "formik_login",
+          imgUrl: "login_signup.jpeg",
+          description: "Bu iki bileşen, kullanıcıların giriş yapabileceği veya kayıt olabileceği temel bir giriş/üyelik sayfası oluşturur. "
+        });
       },
       routes() {
         this.namespace = "api";
