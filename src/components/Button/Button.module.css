@@ -6,9 +6,9 @@
     align-items: center;
     font-weight: 600;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 15px;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.20) 2px 2px 4px;
 }
 .primary {
     background-color: transparent;
@@ -19,8 +19,19 @@
     background-color: var(--secondary-color);
     color: var(--main-color);
 }
-
-.large {
+.secondary {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+.secondary:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+.small {
     width: 80px;
+    height: 40px;
+}
+.large{
+    width: auto;
     height: 40px;
 }

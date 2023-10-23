@@ -1,0 +1,21 @@
+.header{
+    height: 65px;
+    padding: 10px 20%;
+    align-items: center;
+    justify-content:flex-end;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+.header a{
+    text-decoration-line: none;
+    color: var(--main-color);
+    margin: 0 10px;
+  }
+.header a:hover{
+    color: var(--secondary-color);
+  }
+.siteLogo{
+    font-size: 35px;
+    position: absolute;
+    left: 10%;
+  }
