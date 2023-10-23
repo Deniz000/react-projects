@@ -22,6 +22,7 @@ createServer({
           imgUrl: "formik.png",
           description: "React, Formik ve Yup kullanarak geliştirdiğim bu bileşen, kullanıcı kayıt formunun oluşturulması, veri doğrulaması ve işlenmesi süreçlerini başarıyla yöneterek hem kullanıcı dostu bir deneyim sunuyor hem de güvenilir verilerin kaydedilmesini sağlıyor."
         });
+        
       },
       routes() {
         this.namespace = "api";

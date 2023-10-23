@@ -1,7 +1,7 @@
 import React from 'react'
 import Buttons from '../../components/Button/Button'
 import styles from './Home.module.css'
-import Projects from '../Projects';
+import Projects from '../Projects/Projects';
 
 export default function Home() {
   return (

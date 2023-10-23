@@ -1,47 +1,92 @@
 .side {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    padding: 10px 5px;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
 
 .adminImg {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: 5px solid var(--secondary-color);
-    box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 8px;
-    margin-top: 5%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 8px;
+  margin-top: 5%;
 }
-.leftSide{
-    text-align:left;
-    height: min-content;
-    padding: 30px;
-    margin-top: 25% ;
 
-    & > h1{
-        font-size: 65px;
-        margin: 0;
-        padding: 0;
-    }
-    & > h2{
-        font-size: 45px;
-        margin: 0;
-        padding: 0;
-    }
-    & > p{
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-    }
-    & > button{
-        margin: 10px 0;
-    }
+.leftSide {
+  text-align: left;
+  height: min-content;
+  padding: 30px;
+  margin-top: 25%;
+
+  &>h1 {
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &>h2 {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &>p {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &>button {
+    margin: 10px 0;
+  }
 }
-.projects{
+
+.projects {
+  text-align: center;
+  margin-top: 8rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 940px) {
+  .side {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4px;
+
+  }
+
+  .adminImg {
+    width: 90%;
+    height: 90%;
+  }
+
+  .leftSide {
     text-align: center;
-    margin-top: 8rem;
-    justify-items: center;
+    margin: 0;
+
+    &>h1 {
+      font-size: 45px;
+    }
+
+    &>h2 {
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &>p {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &>button {
+      width: 100%;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import style from './Projects.module.css'
 
 function Projects() {
   const [projects, setProjects] = React.useState([])
@@ -11,17 +12,17 @@ function Projects() {
   }, [])
 
   const elements = projects.map((project) => (
-    <div key={project.id} className='project-card'>
+    <div key={project.id} className={`${style.projectCard}`}>
       {/* <Link to={`/projects/:${}`} className='project-link'> */}
-      <Link to={`/${project.name}`} className='project-link'>
-      <img src={`/images/${project.imgUrl}`}  className='project-img' alt='apps'/>
-      <h2 className='project-name'>{project.name}</h2>
-      <p className='project-description'>{project.description}</p>
+      <Link to={`/${project.name}`} className={`${style.projectLink}`}>
+      <img src={`/images/${project.imgUrl}`}  className={`${style.projectImg}`} alt='apps'/>
+      <h2 className={`${style.projectName}`}>{project.name}</h2>
+      <p className={`${style.projectDescription}`}>{project.description}</p>
       </Link>
     </div>
   ))
   return (
-    <section className='context-home'>
+    <section className={`${style.contextHome}`}>
       
       {elements}
     </section>

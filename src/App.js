@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import Projects from './pages/Projects';
+import Projects from './pages/Projects/Projects';
 import { Routes, Route } from 'react-router-dom'
 import './server/server.js'
 import Notes from './pages/notes_apps/Notes';
