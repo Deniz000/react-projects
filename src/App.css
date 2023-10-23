@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap');
+:root{
+  --manin-color: #272343;
+  --second-color: #a2a8d3;
+}
 .App {
   text-align: center;
   min-height: 100vh;
   font-family: 'Pixelify Sans', sans-serif;
-  background-color: #ddeedf;
   margin: 0;
   padding: 0;
-  color: #222222;
+  color: var(--manin-color);
 }
 body,h1{
   margin: 0;
@@ -21,11 +24,11 @@ header{
 }
 header a{
   text-decoration-line: none;
-  color: #222222;
+  color: var(--manin-color);
   margin: 0 10px;
 }
 header a:hover{
-  color: #a2a8d3;
+  color: var(--second-color);
 }
 .site-logo{
   font-size: 35px;
@@ -33,14 +36,14 @@ header a:hover{
   left: 10%;
 }
 .context{
-  background-color: #f2f9f1;
+  border-top: 1px solid var(--manin-color);
   padding: 5% 10%;
   min-width: 100vh;
   min-height: 100vh;
 }
 .context-home{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 40px;
 }
 .project-card{
@@ -56,7 +59,7 @@ header a:hover{
   font-size: 14px;
 }
 .project-link{
-  color: #222222;
+  color: var(--manin-color);
   text-decoration: none;
 }
 .project-img{

@@ -1,0 +1,27 @@
+.btn {
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    color: orange;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.primary {
+    background-color: purple;
+}
+
+.btn-primary:hover {
+    background-color: pink;
+    color: black;
+}
+
+.btn-large {
+    background-color: rebeccapurple;
+    width: 10px;
+    height: 30px;
+}

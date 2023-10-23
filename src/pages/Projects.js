@@ -22,6 +22,7 @@ function Projects() {
   ))
   return (
     <section className='context-home'>
+      
       {elements}
     </section>
   )

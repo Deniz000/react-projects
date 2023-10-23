@@ -22,7 +22,7 @@ export default function FormikSignUp() {
   });
   return (
     <section className='form-container'>
-      <img className='logo' src='images/logo.png' />
+      <img className='logo' src='images/logo.png' alt='logo'/>
       <form onSubmit={formik.handleSubmit}>
         <div className='input-names'>
           <input
