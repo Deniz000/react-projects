@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap');
 :root{
-  --manin-color: #272343;
-  --second-color: #a2a8d3;
+  --main-color: #272343;
+  --secondary-color: #ac9ee1;
 }
 .App {
   text-align: center;
@@ -9,7 +9,7 @@
   font-family: 'Pixelify Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--manin-color);
+  color: var(--main-color);
 }
 body,h1{
   margin: 0;
@@ -24,11 +24,11 @@ header{
 }
 header a{
   text-decoration-line: none;
-  color: var(--manin-color);
+  color: var(--main-color);
   margin: 0 10px;
 }
 header a:hover{
-  color: var(--second-color);
+  color: var(--secondary-color);
 }
 .site-logo{
   font-size: 35px;
@@ -36,7 +36,7 @@ header a:hover{
   left: 10%;
 }
 .context{
-  border-top: 1px solid var(--manin-color);
+  border-top: 1px solid var(--main-color);
   padding: 5% 10%;
   min-width: 100vh;
   min-height: 100vh;
@@ -59,7 +59,7 @@ header a:hover{
   font-size: 14px;
 }
 .project-link{
-  color: var(--manin-color);
+  color: var(--main-color);
   text-decoration: none;
 }
 .project-img{

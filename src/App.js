@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Header/>
       <div  className='context'>
-        <Buttons color={'primary'}/>
+        <Buttons color={'primary'} size={'large'}/>
       <Routes>
         <Route path='/' element={<Projects />} />
         <Route path='/projects' element={<Projects />} />

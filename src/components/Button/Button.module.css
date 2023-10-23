@@ -1,27 +1,26 @@
 .btn {
     margin: 10px;
-    padding: 40px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
     text-align: center;
-    color: orange;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
 }
-
 .primary {
-    background-color: purple;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
 }
 
-.btn-primary:hover {
-    background-color: pink;
-    color: black;
+.primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
 }
 
-.btn-large {
-    background-color: rebeccapurple;
-    width: 10px;
-    height: 30px;
+.large {
+    width: 80px;
+    height: 40px;
 }
