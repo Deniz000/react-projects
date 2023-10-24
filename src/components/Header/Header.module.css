@@ -4,8 +4,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, #3c404326 0px 1px 3px 1px;
 }
 
 .header a {
@@ -21,8 +21,13 @@
 .siteLogo {
   font-size: 35px;
 }
-
-.toggleButton {
+.toggleButton{
+  border: 0;
+  background-color: var(--white);
+}
+.icon{
+}
+.toggleNavbar {
   background-color: var(--white);
   width: 100%;
   position: absolute;
@@ -37,7 +42,7 @@
   text-align: center;
 }
 
-.toggleButton a {
+.toggleNavbar a {
   height: 40px;
   width: 100%;
   align-items: center;
@@ -59,7 +64,7 @@
 }
 
 /* Mobil için medya sorgusu */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .header {
     padding: 1% 2%;
   }
@@ -68,17 +73,13 @@
     font-size: 1.5em;
   }
 
-  .toggleButton {
+  .toggleNavbar {
     display: flex;
   }
 
-  .toggleButton a {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggleButton a {
+  .toggleNavbar a {
     width: 100%;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
