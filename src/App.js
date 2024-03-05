@@ -9,6 +9,7 @@ import SignUpBasic from './pages/form_things/SignUpBasic'
 import FormikSignUp from './pages/formik/FormikSignUp';
 import Home from './pages/Home/Home';
 import Layout from './pages/Layout';
+import Weather from './pages/weather/Weather';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Layout/>}>
         <Route index element={<Home />} />
         <Route path='projects' element={<Projects />} />
+        <Route path='weather' element={<Weather />} />
         <Route path='/notes' element={<Notes />} />
         <Route path='/login' element={<LoginBasic />} />
         <Route path='/signup' element={<SignUpBasic />} />
